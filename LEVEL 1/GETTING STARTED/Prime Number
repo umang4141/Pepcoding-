@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class PRime {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i, flag = 0, j;
+        int n = scan.nextInt();
+        int[] search = new int[10000];
+        for (j = 0; j < n; j++) {
+            search[j] = scan.nextInt();
+            for (i = 2; i <= j; i++) {
+                if (j % i == 0) {
+                    flag++;
+                }
+            }
+        }
+            if (flag <= 1) {
+                System.out.println("Number is Prime");
+            } else {
+                System.out.println("Number is not Prime");
+
+        }
+    }
+}
