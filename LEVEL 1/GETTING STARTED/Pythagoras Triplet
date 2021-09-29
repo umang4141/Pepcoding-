@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class pythagorastriplet {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int d,e,f,g,h,k;
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        d = (b * b) + (c * c);
+        e= (a * a) + (b * b);
+        f= (a * a) + (c * c);
+        g=a*a;
+        h=b*b;
+        k=c*c;
+        if (a > b && a > c && (g==d)){
+            System.out.println("True");
+        }
+        else if (b > a && b > c && (h==f)){
+            System.out.println("True");
+        }
+        else if (c > a && c > b && (k==e)) {
+            System.out.println("True");
+        }
+        else{
+            System.out.println("False");
+        }
+
+    }
+}
